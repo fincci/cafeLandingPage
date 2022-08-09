@@ -9,11 +9,13 @@ body {
     font-family: 'Source Serif Pro', serif;
     margin: 0 auto;
     font-size: 1.6rem;
+    background-color: #fff3dc;
 }
 
 .cabecalho {
+    display: flex;
+    justify-content: space-between;
     padding: 30px 15px;
-    position: relative;
 }
 
 .cabecalho .logo {
@@ -28,18 +30,24 @@ body {
 }
 
 .cabecalho nav {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecalho ul {
+    display: flex;
+    width: 40%;
+    min-width: 350px;
+    justify-content: space-around;
 }
 
 .cabecalho ul li {
-    display: inline-block;
-    padding: 15px;
+
 }
 
-.cabecalho ul li a:hover {
+.cabecalho ul li:hover a {
     font-weight: bold;
 }
 
